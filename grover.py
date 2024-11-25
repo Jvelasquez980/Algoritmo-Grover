@@ -4,16 +4,6 @@ from qiskit.visualization import plot_histogram
 import numpy as np
 
 def grover_algorithm(oracle_function, n_qubits):
-    """
-    Implementa el algoritmo de Grover.
-    
-    Parámetros:
-    oracle_function: función que devuelve un QuantumCircuit representando el oráculo.
-    n_qubits: número de qubits en el sistema.
-    
-    Retorna:
-    Un diccionario con los resultados de la medición.
-    """
     # Crear el circuito cuántico con espacio para mediciones
     qc = QuantumCircuit(n_qubits, n_qubits)
 
@@ -60,3 +50,6 @@ result = grover_algorithm(oracle, n_qubits=2)
 # Mostrar resultados
 print("Resultados:", result)
 plot_histogram(result).show()
+
+#No supe solucionar un error por lo que no puedo ver el histograma, una disculpa
+
